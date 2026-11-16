@@ -1,0 +1,17 @@
+######## A) real local disk, no artificial latency (2 cores). sequential baseline + pools 1,2,4,8, 3 repetitions each
+MODE=executor pool=1 latency=0ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=673 ms peakThreads=7 peakRSS=211 MB resultDigest=4eea78e6b754 
+MODE=executor pool=2 latency=0ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=803 ms peakThreads=8 peakRSS=215 MB resultDigest=4eea78e6b754 
+MODE=executor pool=4 latency=0ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=871 ms peakThreads=10 peakRSS=205 MB resultDigest=4eea78e6b754 
+MODE=executor pool=8 latency=0ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=1130 ms peakThreads=14 peakRSS=185 MB resultDigest=4eea78e6b754 
+MODE=executor pool=1 latency=0ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=677 ms peakThreads=7 peakRSS=184 MB resultDigest=4eea78e6b754 
+MODE=executor pool=2 latency=0ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=500 ms peakThreads=8 peakRSS=163 MB resultDigest=4eea78e6b754 
+MODE=executor pool=4 latency=0ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=1017 ms peakThreads=10 peakRSS=228 MB resultDigest=4eea78e6b754 
+MODE=executor pool=8 latency=0ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=1124 ms peakThreads=14 peakRSS=220 MB resultDigest=4eea78e6b754 
+MODE=executor pool=1 latency=0ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=794 ms peakThreads=7 peakRSS=212 MB resultDigest=4eea78e6b754 
+MODE=executor pool=2 latency=0ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=783 ms peakThreads=8 peakRSS=211 MB resultDigest=4eea78e6b754 
+MODE=executor pool=4 latency=0ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=942 ms peakThreads=10 peakRSS=199 MB resultDigest=4eea78e6b754 
+MODE=executor pool=8 latency=0ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=1081 ms peakThreads=14 peakRSS=212 MB resultDigest=4eea78e6b754 
+MODE=sequential latency=0ms files=10000
+  processed OK=9200 (PASS 3932, FAIL 5268, avg 60.07%)  CORRUPT=400  MISSING=400  ERROR=0  TIMEOUT=0
+  accounted 10000 of 10000 files, map size 10000 -> COMPLETE
+  time=568 ms   peakThreads=6   peakRSS=175 MB   resultDigest=4eea78e6b754

@@ -1,0 +1,18 @@
+Mode: runnable
+Station-A before start: state=NEW alive=false
+Station-B before start: state=NEW alive=false
+Station-C before start: state=NEW alive=false
+Station-D before start: state=NEW alive=false
+Station-A after start : state=TIMED_WAITING alive=true
+Station-B after start : state=TIMED_WAITING alive=true
+Station-C after start : state=TIMED_WAITING alive=true
+Station-D after start : state=TIMED_WAITING alive=true
+  Station-B finished: scanned 7 scripts
+  Station-D finished: scanned 9 scripts
+  Station-A finished: scanned 12 scripts
+  Station-C finished: scanned 20 scripts
+Station-A after join  : state=TERMINATED alive=false
+Station-B after join  : state=TERMINATED alive=false
+Station-C after join  : state=TERMINATED alive=false
+Station-D after join  : state=TERMINATED alive=false
+TOTAL scripts scanned: 48

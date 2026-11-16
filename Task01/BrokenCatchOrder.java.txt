@@ -1,0 +1,14 @@
+// Student B: broader catch BEFORE narrower catch. Does NOT compile.
+// (Saved as .txt so it does not break "javac *.java". Copy to BrokenCatchOrder.java to try it.)
+import java.io.*;
+public class BrokenCatchOrder {
+    public static void main(String[] args) {
+        try {
+            new FileReader("missing.txt");
+        } catch (IOException e) {
+            System.out.println("broad");
+        } catch (FileNotFoundException e) {   // unreachable: already caught by IOException
+            System.out.println("narrow");
+        }
+    }
+}

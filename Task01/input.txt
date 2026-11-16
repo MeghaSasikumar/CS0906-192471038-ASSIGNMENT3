@@ -1,0 +1,8 @@
+1001 500 card_1001.txt
+1001 abc card_1001.txt
+1001 -200 card_1001.txt
+1001 99999 card_1001.txt
+1001 100 missing_card.txt
+1002 100 card_1001.txt
+9999 100 card_9999.txt
+1001

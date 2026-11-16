@@ -1,0 +1,3 @@
+data/store1.txt
+data/store2.txt
+data/store4.txt

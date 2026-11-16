@@ -1,0 +1,10 @@
+small_set/S001.txt
+small_set/S002.txt
+small_set/S003.txt
+small_set/S004.txt
+small_set/S005.txt
+small_set/S006.txt
+small_set/S007_corrupt_text.txt
+small_set/S008_corrupt_range.txt
+small_set/S009_corrupt_empty.txt
+small_set/S010_missing.txt

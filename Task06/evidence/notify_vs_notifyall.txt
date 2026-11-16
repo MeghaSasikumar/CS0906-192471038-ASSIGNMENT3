@@ -1,0 +1,3 @@
+2 producers, 2 consumers, capacity 1, 10 tokens each, wait() in while; 40 runs each (hang = not finished in 3 s)
+  notifyAll() : hung runs =  0/40
+  notify()    : hung runs = 39/40

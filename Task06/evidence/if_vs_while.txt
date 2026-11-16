@@ -1,0 +1,3 @@
+1 cook (2 ms per token), 2 students, capacity 5, 20 tokens, notifyAll; 30 runs each
+  wait() inside while : runs with wrong sum =  0/30, runs with underflow/overflow =  0/30 (total 0), hung = 0
+  wait() inside if    : runs with wrong sum = 30/30, runs with underflow/overflow = 30/30 (total 30), hung = 0

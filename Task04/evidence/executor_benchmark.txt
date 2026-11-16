@@ -1,0 +1,8 @@
+n=64 scripts (20 ms each), fixed pool of p threads; ideal time = ceil(n/p)*20 ms
+  p= 1  measured  1297 ms   ideal  1280 ms
+  p= 2  measured   645 ms   ideal   640 ms
+  p= 4  measured   322 ms   ideal   320 ms
+  p= 8  measured   164 ms   ideal   160 ms
+  p=16  measured    82 ms   ideal    80 ms
+  p=64  measured    28 ms   ideal    20 ms
+5000 trivial tasks: one new Thread each = 446 ms, pool of 8 = 14 ms

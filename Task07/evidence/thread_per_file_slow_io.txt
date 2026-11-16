@@ -1,0 +1,10 @@
+######## E) thread-per-file when each file takes 3 s of I/O wait (threads pile up)
+MODE=threadperfile latency=3000ms files=10000
+  processed OK=9200 (PASS 3932, FAIL 5268, avg 60.07%)  CORRUPT=400  MISSING=400  ERROR=0  TIMEOUT=0
+  accounted 10000 of 10000 files, map size 10000 -> COMPLETE
+  time=8170 ms   peakThreads=10006   peakRSS=1485 MB   resultDigest=4eea78e6b754
+######## comparison: same 3 s per file, fixed pool of 64 threads, first 640 files only (to keep the run short)
+MODE=executor pool=64 latency=3000ms files=640
+  processed OK=589 (PASS 267, FAIL 322, avg 60.26%)  CORRUPT=26  MISSING=25  ERROR=0  TIMEOUT=0
+  accounted 640 of 640 files, map size 640 -> COMPLETE
+  time=30094 ms   peakThreads=70   peakRSS=115 MB   resultDigest=d11946d845e4

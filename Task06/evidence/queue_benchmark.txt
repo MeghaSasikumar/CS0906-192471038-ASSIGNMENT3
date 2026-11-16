@@ -1,0 +1,3 @@
+run 1: wait/notifyAll   5315 ns/token | ArrayBlockingQueue   5415 ns/token | sums equal=true (500000500000)
+run 2: wait/notifyAll   4945 ns/token | ArrayBlockingQueue   5183 ns/token | sums equal=true (500000500000)
+run 3: wait/notifyAll   5775 ns/token | ArrayBlockingQueue   5165 ns/token | sums equal=true (500000500000)

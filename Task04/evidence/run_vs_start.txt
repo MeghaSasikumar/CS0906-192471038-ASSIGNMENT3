@@ -1,0 +1,7 @@
+main thread is: main
+calling t1.run():
+  body executed by thread: main
+  t1.getState() after run()  = NEW  (never started)
+calling t2.start():
+  body executed by thread: Station-Y
+  t2.getState() after join() = TERMINATED

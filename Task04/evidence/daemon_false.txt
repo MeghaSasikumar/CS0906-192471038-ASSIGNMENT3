@@ -1,0 +1,2 @@
+Station-D daemon=false; main() is ending now
+  Station D finished its 500 ms batch

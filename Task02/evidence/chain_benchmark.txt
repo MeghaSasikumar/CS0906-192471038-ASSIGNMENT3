@@ -1,0 +1,10 @@
+depth   5 | stack trace, no cause    |      403 ns/exception
+depth   5 | stack trace + cause      |      460 ns/exception
+depth   5 | no stack trace + cause   |       30 ns/exception
+depth  50 | stack trace, no cause    |     1529 ns/exception
+depth  50 | stack trace + cause      |     1350 ns/exception
+depth  50 | no stack trace + cause   |       49 ns/exception
+depth 200 | stack trace, no cause    |     4404 ns/exception
+depth 200 | stack trace + cause      |     4341 ns/exception
+depth 200 | no stack trace + cause   |      146 ns/exception
+(sink=2697814)

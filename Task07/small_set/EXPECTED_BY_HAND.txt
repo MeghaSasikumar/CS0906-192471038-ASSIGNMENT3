@@ -1,0 +1,13 @@
+Hand-calculated expectations for small_index.txt (10 entries):
+S001  80+70+90  = 240  -> 80.00%   PASS
+S002  60+55+45  = 160  -> 53.33%   PASS
+S003  30+90+80  = 200  -> 66.67%   FAIL (30 < 40 in one subject)
+S004  100x3     = 300  -> 100.00%  PASS
+S005  40x3      = 120  -> 40.00%   PASS (boundary: 40 is enough)
+S006  39+50+60  = 149  -> 49.67%   FAIL (boundary: 39 is not enough)
+S007  marks 'abc'               -> CORRUPT
+S008  marks 101 (checksum valid)-> CORRUPT (out of range)
+S009  empty file                -> CORRUPT
+S010  file does not exist       -> MISSING
+Expected summary: OK=6 (PASS 4, FAIL 2), CORRUPT=3, MISSING=1, ERROR=0, TIMEOUT=0
+Average of the OK percentages = (80+53.333+66.667+100+40+49.667)/6 = 389.667/6 = 64.94%

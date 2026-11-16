@@ -1,0 +1,3 @@
+counter size after each put/take (40 operations, capacity 5):
+[1, 2, 3, 4, 5, 4, 3, 2, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 2, 3, 4, 5, 4, 3, 4, 3, 2, 1, 0, 1, 0]
+max size seen = 5 (limit 5), min size seen = 0 (limit 0), sum = 210 (expected 210), anomalies = 0

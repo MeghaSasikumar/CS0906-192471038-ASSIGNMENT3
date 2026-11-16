@@ -1,0 +1,5 @@
+data/store1.txt
+data/store2.txt
+data/store3_corrupt.txt
+data/store4.txt
+data/store5_corrupt.txt

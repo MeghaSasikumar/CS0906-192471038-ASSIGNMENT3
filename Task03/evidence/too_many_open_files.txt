@@ -1,0 +1,14 @@
+Reproduction: 400 corrupt store files, file-descriptor limit lowered with 'ulimit -n 150'
+
+leaky  : 400 stores logged as failed; 256 of them failed ONLY because the handle limit was reached (first at s145.txt).
+         The program then crashed while writing the summary (java.util.ServiceConfigurationError: ... cannot be instantiated) because the JVM could not open even one more file -> INCOMPLETE REPORT.
+         Exception in thread "main" java.util.ServiceConfigurationError: Locale provider adapter "CLDR"cannot be instantiated.
+         	at java.base/sun.util.locale.provider.LocaleProviderAdapter.forType(LocaleProviderAdapter.java:205)
+         	at java.base/sun.util.locale.provider.LocaleProviderAdapter.findAdapter(LocaleProviderAdapter.java:293)
+
+--- manual (400 corrupt files, ulimit -n 150)
+files that failed with "Too many open files": 0
+MODE=manual stores=400 maxOpenDuringRun=1 FILES LEFT OPEN AT END=0
+--- twr (400 corrupt files, ulimit -n 150)
+files that failed with "Too many open files": 0
+MODE=twr stores=400 maxOpenDuringRun=1 FILES LEFT OPEN AT END=0

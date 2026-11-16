@@ -1,0 +1,4 @@
+500 -> code 0
+abc -> code -1
+-5 -> code -2
+99999 -> code -3

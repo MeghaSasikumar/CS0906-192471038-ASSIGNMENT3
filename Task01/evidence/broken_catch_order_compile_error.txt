@@ -1,0 +1,4 @@
+BrokenCatchOrder.java:10: error: exception FileNotFoundException has already been caught
+        } catch (FileNotFoundException e) {   // unreachable: already caught by IOException
+          ^
+1 error

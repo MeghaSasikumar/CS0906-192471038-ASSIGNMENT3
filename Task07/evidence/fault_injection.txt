@@ -1,0 +1,13 @@
+######## C) fault injection: every 1000th file throws RuntimeException, every 2500th throws StackOverflowError (an Error)
+MODE=executor pool=4 latency=0ms files=10000
+  processed OK=9200 (PASS 3932, FAIL 5268, avg 60.07%)  CORRUPT=400  MISSING=388  ERROR=12  TIMEOUT=0
+  accounted 10000 of 10000 files, map size 10000 -> COMPLETE
+  time=1115 ms   peakThreads=10   peakRSS=210 MB   resultDigest=31c5572ef00f
+MODE=parallel latency=0ms files=10000
+  processed OK=9200 (PASS 3932, FAIL 5268, avg 60.07%)  CORRUPT=400  MISSING=388  ERROR=12  TIMEOUT=0
+  accounted 10000 of 10000 files, map size 10000 -> COMPLETE
+  time=744 ms   peakThreads=7   peakRSS=171 MB   resultDigest=31c5572ef00f
+MODE=threadperfile latency=0ms files=10000
+  processed OK=9200 (PASS 3932, FAIL 5268, avg 60.07%)  CORRUPT=400  MISSING=388  ERROR=12  TIMEOUT=0
+  accounted 10000 of 10000 files, map size 10000 -> COMPLETE
+  time=2889 ms   peakThreads=179   peakRSS=257 MB   resultDigest=31c5572ef00f

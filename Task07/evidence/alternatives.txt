@@ -1,0 +1,14 @@
+######## D) alternatives with 2 ms simulated I/O wait per file
+-- parallel stream, default common pool (cores-1 workers + caller)
+MODE=parallel latency=2ms files=10000
+  accounted 10000 of 10000 files, map size 10000 -> COMPLETE
+  time=10781 ms   peakThreads=7   peakRSS=146 MB   resultDigest=4eea78e6b754
+-- parallel stream, common pool parallelism forced to 8
+MODE=parallel latency=2ms files=10000
+  accounted 10000 of 10000 files, map size 10000 -> COMPLETE
+  time=2843 ms   peakThreads=14   peakRSS=170 MB   resultDigest=4eea78e6b754
+-- one thread per file (10,000 threads)
+MODE=threadperfile latency=2ms files=10000
+  processed OK=9200 (PASS 3932, FAIL 5268, avg 60.07%)  CORRUPT=400  MISSING=400  ERROR=0  TIMEOUT=0
+  accounted 10000 of 10000 files, map size 10000 -> COMPLETE
+  time=2092 ms   peakThreads=94   peakRSS=196 MB   resultDigest=4eea78e6b754

@@ -1,0 +1,12 @@
+--- leaky
+[LOG] FAILED store data/store3_corrupt.txt : java.lang.NumberFormatException: For input string: "abc"
+[LOG] FAILED store data/store5_corrupt.txt : java.lang.NumberFormatException: For input string: "x1"
+MODE=leaky stores=5 maxOpenDuringRun=2 FILES LEFT OPEN AT END=2
+--- manual
+[LOG] FAILED store data/store3_corrupt.txt : java.lang.NumberFormatException: For input string: "abc"
+[LOG] FAILED store data/store5_corrupt.txt : java.lang.NumberFormatException: For input string: "x1"
+MODE=manual stores=5 maxOpenDuringRun=1 FILES LEFT OPEN AT END=0
+--- twr
+[LOG] FAILED store data/store3_corrupt.txt : java.lang.NumberFormatException: For input string: "abc"
+[LOG] FAILED store data/store5_corrupt.txt : java.lang.NumberFormatException: For input string: "x1"
+MODE=twr stores=5 maxOpenDuringRun=1 FILES LEFT OPEN AT END=0

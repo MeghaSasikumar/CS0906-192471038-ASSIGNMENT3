@@ -1,0 +1,24 @@
+Test 1: 1001 500 card_1001.txt
+  Dispensed Rs. 500.0 (balance 4500.0)
+  [finally] card returned, session closed
+Test 2: 1001 abc card_1001.txt
+  [catch 1: bad input] NumberFormatException: For input string: "abc"
+  [finally] card returned, session closed
+Test 3: 1001 -200 card_1001.txt
+  [catch 2: invalid amount] Amount must be positive: -200.0
+  [finally] card returned, session closed
+Test 4: 1001 99999 card_1001.txt
+  [catch 4: insufficient funds] Requested 99999.0 but balance is 4500.0
+  [finally] card returned, session closed
+Test 5: 1001 100 missing_card.txt
+  [catch 5: card reader file missing] missing_card.txt (No such file or directory)
+  [finally] card returned, session closed
+Test 6: 1002 100 card_1001.txt
+  [catch 6: card read error] Card does not match account 1002
+  [finally] card returned, session closed
+Test 7: 9999 100 card_9999.txt
+  [catch 3: account problem] Unknown account 9999
+  [finally] card returned, session closed
+Test 8: 1001
+  [catch 1: bad input] ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+  [finally] card returned, session closed

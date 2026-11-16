@@ -1,0 +1,6 @@
+Exception in thread "main" UncheckedPortal$StorageEx: Could not store ok.pdf
+	at UncheckedPortal.save(UncheckedPortal.java:9)
+	at UncheckedPortal.service(UncheckedPortal.java:10)
+	at UncheckedPortal.main(UncheckedPortal.java:12)
+Caused by: java.io.IOException: disk full
+	... 3 more

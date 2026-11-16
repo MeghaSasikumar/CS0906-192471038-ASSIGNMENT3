@@ -1,0 +1,6 @@
+10,000 booking attempts, 1000 seats, 8 threads, median of 15 runs (each attempt has ~200 sqrt of unshared work)
+  synchronized method            median   4.33 ms   double bookings: 0
+  synchronized block             median   2.44 ms   double bookings: 0
+  AtomicBoolean CAS              median   2.15 ms   double bookings: 0
+  ReentrantLock                  median   2.78 ms   double bookings: 0
+  ConcurrentHashMap.putIfAbsent  median   4.04 ms   double bookings: 0

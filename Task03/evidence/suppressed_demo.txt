@@ -1,0 +1,7 @@
+open  A (opened first)
+open  B (opened second)
+body running
+close B (opened second)
+close A (opened first)
+caught   : PRIMARY failure in body
+suppressed: close() of B (opened second) failed

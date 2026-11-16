@@ -1,0 +1,30 @@
+MODE=sequential latency=0ms files=10
+  processed OK=6 (PASS 4, FAIL 2, avg 64.94%)  CORRUPT=3  MISSING=1  ERROR=0  TIMEOUT=0
+  accounted 10 of 10 files, map size 10 -> COMPLETE
+  time=48 ms   peakThreads=6   peakRSS=48 MB   resultDigest=696f5739033e
+    small_set/S001.txt | OK | S001 total=240 pct=80.00 PASS
+    small_set/S002.txt | OK | S002 total=160 pct=53.33 PASS
+    small_set/S003.txt | OK | S003 total=200 pct=66.67 FAIL
+    small_set/S004.txt | OK | S004 total=300 pct=100.00 PASS
+    small_set/S005.txt | OK | S005 total=120 pct=40.00 PASS
+    small_set/S006.txt | OK | S006 total=149 pct=49.67 FAIL
+    small_set/S007_corrupt_text.txt | CORRUPT | bad marks line 'MATH,abc'
+    small_set/S008_corrupt_range.txt | CORRUPT | marks out of range: 101
+    small_set/S009_corrupt_empty.txt | CORRUPT | expected 5 lines but found 0
+    small_set/S010_missing.txt | MISSING | missing: small_set/S010_missing.txt
+
+MODE=executor pool=4 latency=0ms files=10
+  processed OK=6 (PASS 4, FAIL 2, avg 64.94%)  CORRUPT=3  MISSING=1  ERROR=0  TIMEOUT=0
+  accounted 10 of 10 files, map size 10 -> COMPLETE
+  time=44 ms   peakThreads=10   peakRSS=49 MB   resultDigest=696f5739033e
+    small_set/S001.txt | OK | S001 total=240 pct=80.00 PASS
+    small_set/S002.txt | OK | S002 total=160 pct=53.33 PASS
+    small_set/S003.txt | OK | S003 total=200 pct=66.67 FAIL
+    small_set/S004.txt | OK | S004 total=300 pct=100.00 PASS
+    small_set/S005.txt | OK | S005 total=120 pct=40.00 PASS
+    small_set/S006.txt | OK | S006 total=149 pct=49.67 FAIL
+    small_set/S007_corrupt_text.txt | CORRUPT | bad marks line 'MATH,abc'
+    small_set/S008_corrupt_range.txt | CORRUPT | marks out of range: 101
+    small_set/S009_corrupt_empty.txt | CORRUPT | expected 5 lines but found 0
+    small_set/S010_missing.txt | MISSING | missing: small_set/S010_missing.txt
+

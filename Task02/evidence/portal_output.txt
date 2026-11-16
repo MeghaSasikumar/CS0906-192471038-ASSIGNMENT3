@@ -1,0 +1,14 @@
+Case 1: valid submission
+    [storage] wrote ans1.pdf (120 KB)
+    Student sees: Submission accepted.
+Case 2: window closed
+    Student sees: Submission rejected - Exam window closed at 2026-11-20T17:00
+Case 3: not registered
+    Student sees: Submission rejected - S9 is not registered for CS101
+Case 4: file too large
+    Student sees: Submission rejected - ans4.pdf is 800 KB; limit is 500 KB
+Case 5: storage failure (IOException chained)
+    Student sees: We could not save your answer, please retry. (Could not store FULL_ans5.pdf)
+    Log: cause = java.io.IOException: No space left on device
+Case 6: blank file name (unchecked)
+    Student sees: Internal error - student and file are required

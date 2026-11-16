@@ -1,0 +1,7 @@
+######## B) simulated slow storage: 2 ms I/O wait per file (-Dlatency=2), 1 run each
+MODE=executor pool=1 latency=2ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=21796 ms peakThreads=7 peakRSS=165 MB resultDigest=4eea78e6b754 
+MODE=executor pool=2 latency=2ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=10838 ms peakThreads=8 peakRSS=165 MB resultDigest=4eea78e6b754 
+MODE=executor pool=4 latency=2ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=5502 ms peakThreads=10 peakRSS=167 MB resultDigest=4eea78e6b754 
+MODE=executor pool=8 latency=2ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=2828 ms peakThreads=14 peakRSS=150 MB resultDigest=4eea78e6b754 
+MODE=executor pool=16 latency=2ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=1562 ms peakThreads=22 peakRSS=150 MB resultDigest=4eea78e6b754 
+MODE=executor pool=32 latency=2ms files=10000 accounted 10000 of 10000 files, map size 10000 -> COMPLETE time=1110 ms peakThreads=38 peakRSS=212 MB resultDigest=4eea78e6b754 

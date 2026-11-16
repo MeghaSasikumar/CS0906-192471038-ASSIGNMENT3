@@ -1,0 +1,12 @@
+Case 5: storage failure (IOException chained)
+    Student sees: We could not save your answer, please retry. (Could not store FULL_ans5.pdf)
+    Log: cause = java.io.IOException: No space left on device
+Portal$SubmissionStorageException: Could not store FULL_ans5.pdf
+	at Portal$StorageLayer.write(Portal.java:37)
+	at Portal$ExamService.submit(Portal.java:54)
+	at Portal$Controller.submit(Portal.java:63)
+	at Portal.main(Portal.java:93)
+Caused by: java.io.IOException: No space left on device
+	at Portal$StorageLayer.write(Portal.java:34)
+	... 3 more
+Case 6: blank file name (unchecked)

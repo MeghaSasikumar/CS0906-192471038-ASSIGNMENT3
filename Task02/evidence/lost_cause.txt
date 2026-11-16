@@ -1,0 +1,14 @@
+=== WITH cause ===
+LostCauseDemo$StoreEx: Could not store file
+	at LostCauseDemo.withCause(LostCauseDemo.java:9)
+	at LostCauseDemo.main(LostCauseDemo.java:13)
+Caused by: java.io.IOException: Disk quota exceeded
+	at LostCauseDemo.lowLevel(LostCauseDemo.java:8)
+	... 2 more
+getCause() = java.io.IOException: Disk quota exceeded
+
+=== WITHOUT cause ===
+LostCauseDemo$StoreEx: Could not store file
+	at LostCauseDemo.withoutCause(LostCauseDemo.java:10)
+	at LostCauseDemo.main(LostCauseDemo.java:15)
+getCause() = null

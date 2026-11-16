@@ -1,0 +1,5 @@
+unsafe  (lock from, then to): DEADLOCK - threads did not finish within 1.5 s
+   T1(A->B) is BLOCKED waiting for lock WalletDeadlock$Account@3d075dc0 held by T2(B->A)
+   T2(B->A) is BLOCKED waiting for lock WalletDeadlock$Account@7b23ec81 held by T1(A->B)
+ordered (lock smaller id first): completed. A=950 B=1050 total=2000 (must be 2000)
+tryLock + timeout + back-off: completed. A=950 B=1050 total=2000 (must be 2000)

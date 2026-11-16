@@ -1,0 +1,16 @@
+Race test: 2000 seats, 8 threads, EVERY thread tries seats 0..1999 in the same order, widened window. Expected sales = 2000
+  run 1: seats sold = 5922  -> double bookings = 3922
+  run 2: seats sold = 15355  -> double bookings = 13355
+  run 3: seats sold = 10951  -> double bookings = 8951
+  run 4: seats sold = 7815  -> double bookings = 5815
+  run 5: seats sold = 11844  -> double bookings = 9844
+  run 6: seats sold = 7497  -> double bookings = 5497
+  run 7: seats sold = 7105  -> double bookings = 5105
+  run 8: seats sold = 14560  -> double bookings = 12560
+  run 9: seats sold = 15324  -> double bookings = 13324
+  run 10: seats sold = 2649  -> double bookings = 649
+total double bookings over 10 runs: 79022
+Same test with synchronized method (should always be 2000):
+  run 1: seats sold = 2000
+  run 2: seats sold = 2000
+  run 3: seats sold = 2000

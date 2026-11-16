@@ -1,0 +1,24 @@
+10 runs, equal work, default priority (start order is A,B,C,D):
+  run 1: finish order CABD
+  run 2: finish order ABCD
+  run 3: finish order ACBD
+  run 4: finish order ACBD
+  run 5: finish order ABCD
+  run 6: finish order ACBD
+  run 7: finish order ABCD
+  run 8: finish order BCAD
+  run 9: finish order ABCD
+  run 10: finish order BACD
+distinct orders seen: {ABCD=4, ACBD=3, BACD=1, BCAD=1, CABD=1}
+10 runs with priorities A=MIN(1), B=C=NORM(5), D=MAX(10):
+  run 1: finish order ABCD
+  run 2: finish order ACBD
+  run 3: finish order ACBD
+  run 4: finish order ABCD
+  run 5: finish order ABCD
+  run 6: finish order ABCD
+  run 7: finish order ABDC
+  run 8: finish order ACBD
+  run 9: finish order ABCD
+  run 10: finish order BACD
+distinct orders seen: {ABCD=5, ABDC=1, ACBD=3, BACD=1}

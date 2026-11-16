@@ -1,0 +1,5 @@
+data/store1.txt 1220.49
+data/store2.txt 230.25
+data/store4.txt 820.75
+TOTAL 2271.49
+FAILED []

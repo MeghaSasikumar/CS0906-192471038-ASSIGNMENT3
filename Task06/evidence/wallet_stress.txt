@@ -1,0 +1,2 @@
+ordered : 200000 transfers finished=true in 37 ms (0.19 us/transfer), total money=50000 (must be 50000), gave-up transfers=0
+trylock : 200000 transfers finished=true in 64 ms (0.32 us/transfer), total money=50000 (must be 50000), gave-up transfers=0
